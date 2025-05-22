@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import OnboardingDialog from '@/components/OnboardingDialog';
 import { Button } from '@/components/ui/button';
-import { QuestionMarkCircle } from 'lucide-react';
+import { HelpCircle } from 'lucide-react';
 
 const Index = () => {
   const [showOnboarding, setShowOnboarding] = useState(false);
@@ -27,7 +27,7 @@ const Index = () => {
             className="text-white hover:bg-blue-600" 
             onClick={() => setShowOnboarding(true)}
           >
-            <QuestionMarkCircle className="h-5 w-5 mr-2" />
+            <HelpCircle className="h-5 w-5 mr-2" />
             Documentation
           </Button>
         </div>
