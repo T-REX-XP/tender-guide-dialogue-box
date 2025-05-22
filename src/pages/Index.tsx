@@ -5,15 +5,17 @@ import DocumentationLinks from '@/components/DocumentationLinks';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-slate-100">
       {/* Horizontal top image */}
       <div className="w-full h-40 md:h-64 bg-cover bg-center" style={{ 
         backgroundImage: "url('https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=1920&q=80')"
       }}>
         <div className="w-full h-full flex items-end bg-gradient-to-t from-blue-500/80 to-transparent">
-          <div className="p-6 md:p-8 text-white">
-            <h2 className="text-2xl font-bold">Procurement Documentation</h2>
-            <p className="text-lg">Resources for Big Food Supermarket Network</p>
+          <div className="container mx-auto px-4 md:px-6 lg:px-8">
+            <div className="p-6 md:p-8 text-white">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">Procurement Documentation</h2>
+              <p className="text-lg md:text-xl">Resources for Big Food Supermarket Network</p>
+            </div>
           </div>
         </div>
       </div>
@@ -21,17 +23,17 @@ const Index = () => {
       {/* Main content - full width */}
       <main className="w-full">
         {/* Documentation section */}
-        <div className="py-6">
-          <div className="max-w-7xl mx-auto px-4">
-            <div className="mb-4">
-              <p className="text-gray-700">
+        <div className="py-8 md:py-12">
+          <div className="container mx-auto px-4 md:px-6 lg:px-8">
+            <div className="mb-6 max-w-4xl">
+              <p className="text-gray-700 text-lg">
                 This portal provides all the tools and resources you need to manage the procurement
                 process efficiently. Browse the documentation below to get started.
               </p>
             </div>
             
             <Tabs defaultValue="guides" className="w-full">
-              <TabsList className="grid grid-cols-2 md:grid-cols-4 mb-4 bg-white border-b">
+              <TabsList className="grid grid-cols-2 md:grid-cols-4 mb-6 bg-white border-b">
                 <TabsTrigger value="guides" className="data-[state=active]:text-blue-600 data-[state=active]:border-b-2 data-[state=active]:border-blue-600">
                   Getting Started
                 </TabsTrigger>
@@ -46,9 +48,9 @@ const Index = () => {
                 </TabsTrigger>
               </TabsList>
               
-              <div className="bg-white rounded-md p-6 shadow-sm">
+              <div className="bg-white rounded-lg p-6 md:p-8 shadow-sm">
                 <TabsContent value="guides" className="py-2">
-                  <h3 className="text-xl font-semibold text-blue-700 mb-3">Getting Started Guides</h3>
+                  <h3 className="text-xl font-semibold text-blue-700 mb-4">Getting Started Guides</h3>
                   <DocumentationLinks 
                     links={[
                       { 
@@ -76,7 +78,7 @@ const Index = () => {
                 </TabsContent>
                 
                 <TabsContent value="tenders" className="py-2">
-                  <h3 className="text-xl font-semibold text-blue-700 mb-3">Tender Process Documentation</h3>
+                  <h3 className="text-xl font-semibold text-blue-700 mb-4">Tender Process Documentation</h3>
                   <DocumentationLinks 
                     links={[
                       { 
@@ -104,7 +106,7 @@ const Index = () => {
                 </TabsContent>
                 
                 <TabsContent value="contracts" className="py-2">
-                  <h3 className="text-xl font-semibold text-blue-700 mb-3">Contract Management</h3>
+                  <h3 className="text-xl font-semibold text-blue-700 mb-4">Contract Management</h3>
                   <DocumentationLinks 
                     links={[
                       { 
@@ -132,7 +134,7 @@ const Index = () => {
                 </TabsContent>
                 
                 <TabsContent value="compliance" className="py-2">
-                  <h3 className="text-xl font-semibold text-blue-700 mb-3">Compliance & Regulations</h3>
+                  <h3 className="text-xl font-semibold text-blue-700 mb-4">Compliance & Regulations</h3>
                   <DocumentationLinks 
                     links={[
                       { 
