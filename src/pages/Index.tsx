@@ -160,12 +160,6 @@ const Index = () => {
                 </TabsContent>
               </div>
             </Tabs>
-            
-            <div className="flex flex-col sm:flex-row gap-2 items-center justify-start mt-6 text-gray-600">
-              <p className="text-sm italic">
-                Access this documentation anytime from the help menu
-              </p>
-            </div>
           </div>
         </div>
       </main>
