@@ -21,7 +21,7 @@ const Index = () => {
       {/* Main content - full width */}
       <main className="w-full">
         {/* Documentation section */}
-        <div className="bg-slate-50 py-6">
+        <div className="py-6">
           <div className="max-w-7xl mx-auto px-4">
             <div className="mb-4">
               <p className="text-gray-700">
